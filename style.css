@@ -1,0 +1,84 @@
+*{
+    padding:0;
+    margin:0;
+    overflow:hidden;
+    
+}
+
+body{
+    background: url(media/stars-bg.gif);
+    background-size:cover;
+}
+
+.banner{
+    position:absolute;
+    margin-top: 45vh; 
+    padding: 6vh;
+    width:100%;
+    background-color:rgb(66, 27, 121);
+    opacity:70%;
+    text-align:center;
+    font-size:x-large;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:white;
+    z-index: 2;
+}
+
+
+.galaxy{
+    background:url(media/galaxy.gif);
+    height:250px;
+    width:250px;
+    background-repeat:no-repeat;
+    position:absolute;
+    animation: galxy 35s linear infinite;
+}
+
+.gg{
+    background: url(media/gasgiant2.gif);
+    height:500px;
+    width:550px;
+    background-repeat:no-repeat;
+    animation:gg 40s linear infinite;
+    position: absolute;
+}
+
+.terranwet{
+    background: url(media/terranwet.gif);
+    height:750px;
+    width:750px;
+    background-repeat:no-repeat;
+    animation: tw 70s linear infinite;
+    position: absolute;
+}
+
+.iceworld{
+    background: url(media/iceworld.gif);
+    height: 600px;
+    width:600px;
+    background-repeat: no-repeat;
+    position:absolute;
+    animation: icwrld 15s linear infinite; 
+}
+
+@keyframes galxy{
+    0%  {transform:rotate(0deg);} 
+    100%{transform:rotate(360deg);}
+}
+
+@keyframes gg{
+    0%  {transform:translate(-900px, -600px);}
+    100%{transform:translate(1900px, 500px);}
+}
+
+@keyframes tw{
+    0%  {transform:scale(-4,-4);}
+    100%{transform:scale(5,5);}
+}
+
+@keyframes icwrld{
+    0%  {transform:skew(0deg, 0deg) translate(1000px, 5px);}
+    100%{transform:skew(20deg,50deg) translate(1500px, 5px);}
+}
+
+
